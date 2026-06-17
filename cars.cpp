@@ -11,13 +11,19 @@
 
 
  
-
-
 Car::Car() {
 
-    horsepower = 0;
-    weight = 0;
-    powerLevel = 0;
+
+}
+
+Car::Car(int hp, int w, string carModel) {
+
+    horsepower = hp;
+    weight = w;
+    model = carModel;
+
+    setPowerLevel();
+
 
 }
 void Car::setModel(const string& userinput) {

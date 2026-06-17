@@ -20,6 +20,7 @@ class Car {
 
 
     public:
+    Car(int hp, int w, string carModel);
     Car();
     int getHorsepower();
     void setHorsepower(const int& userinput);

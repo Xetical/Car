@@ -18,26 +18,14 @@ int main() {
     int userinput;
     char userChoice;
 
-    Car Lexus;
-    Lexus.setModel("ES 300H");
-    Lexus.setHorsepower(300);
-    Lexus.setWeight(3000);
-    Lexus.setPowerLevel();
+    Car Lexus(300, 3000, "ES 300H");
     myGarage.setDatabase(Lexus);
 
     
-    Car Ferrari;
-    Ferrari.setModel("Ferrari California");
-    Ferrari.setHorsepower(800);
-    Ferrari.setWeight(2000);
-    Ferrari.setPowerLevel();
+    Car Ferrari(800, 2000, "Ferrari California");
     myGarage.setDatabase(Ferrari);
 
-    Car BMW;
-    BMW.setHorsepower(380);
-    BMW.setWeight(3000);
-    BMW.setModel("M4 Competition");
-    BMW.setPowerLevel();
+    Car BMW(300, 3000, "M4 Competition");
     myGarage.setDatabase(BMW);
     cout << endl;
     cout << endl << endl;
